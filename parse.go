@@ -25,7 +25,7 @@ func Parse(r io.Reader) ([]Link, error) {
 		links = append(links, buildLink(n))
 	}
 	fmt.Printf("%+v", links)
-	return nil, nil
+	return links, nil
 }
 
 func buildLink(n *html.Node) Link {
