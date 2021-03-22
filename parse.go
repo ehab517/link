@@ -1,7 +1,6 @@
 package link
 
 import (
-	"fmt"
 	"io"
 	"strings"
 
@@ -24,7 +23,7 @@ func Parse(r io.Reader) ([]Link, error) {
 	for _, n := range anodes {
 		links = append(links, buildLink(n))
 	}
-	fmt.Printf("%+v", links)
+	//fmt.Printf("%+v", links)
 	return links, nil
 }
 
